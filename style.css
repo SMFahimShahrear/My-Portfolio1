@@ -149,18 +149,28 @@
     background: none;
 }
 
-/*=================ABOUT SECTION STYLING=======================*/
+/*=================SIMILAR THINGS STYLING=======================*/
+.about, .services, .skills
+{
+    font-family: 'Ubuntu', Arial, 'Times New Roman', Times, serif;
+}
+
+.about .about_content, 
+.services .services_content,
+.skills .skills_content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 section
 {
     padding: 100px 0;
 }
 
-.about, .services
-{
-    font-family: 'Ubuntu', Arial, 'Times New Roman', Times, serif;
-}
-
-.about .title
+section .title
 {
     position: relative;
     text-align: center;
@@ -171,7 +181,7 @@ section
     font-family: 'Ubuntu', Arial, 'Times New Roman', Times, serif;
 }
 
-.about .title::before
+section .title::before
 {
     content: "";
     position: absolute;
@@ -183,9 +193,8 @@ section
     transform: translateX(-50%);
 }
 
-.about .title::after
+section .title::after
 {
-    content: "who i am";
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -196,12 +205,10 @@ section
     transform: translateX(-50%);
 }
 
-.about .about_content
+/*=================ABOUT SECTION STYLING=======================*/
+.about .title::after
 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    content: "who i am";
 }
 
 .about .about_content .left
@@ -262,9 +269,167 @@ section
 /*=================SERVICES SECTION STYLING=======================*/
 .services
 {
+    color: white;
+    background: #111;
+}
+
+.services .title::before
+{
+    background: white;
+}
+.services .title::after
+{
+    background: #111;
+    content: "what i provide";
+}
+
+.services .services_content .card
+{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 7px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .services_content .card:hover
+{
+    background: crimson;
+}
+
+.services .services_content .card .box
+{
+    transition: all 0.3s ease;
+}
+
+.services .services_content .card:hover .box
+{
+    transform: scale(1.05);
+}
+
+.services .services_content .card i
+{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.services .services_content .card:hover i
+{
+    color: white;
+}
+
+.services .services_content .card .text
+{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*=================SKILLS SECTION STYLING=======================*/
+.skills .title::after
+{
+    content: "what i know";
+}
+
+.skills .skills_content .coloumn
+{
+    width: calc(50% - 30px);
+}
+
+.skills .skills_content .left .text
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills_content .left p
+{
+    text-align: justify;
+}
+
+.skills .skills_content .left a
+{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.skills .skills_content .left a:hover
+{
+    color: crimson;
+    background: none;
+}
+
+.skills .skills_content .right .bars
+{
+    margin-bottom: 15px;
 
 }
 
+.skills .skills_content .right .info
+{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills_content .right span
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.skills .skills_content .right .line
+{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skills_content .right .line::before
+{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills .skills_content .right .html::before
+{
+    width: 80%;
+}
+.skills .skills_content .right .css::before
+{
+    width: 70%;
+}
+.skills .skills_content .right .js::before
+{
+    width: 80%;
+}
+.skills .skills_content .right .java::before
+{
+    width: 50%;
+}
+.skills .skills_content .right .mysql::before
+{
+    width: 60%;
+}
 /*=================RESPONSIVE MEDIA QUERY=======================*/
 @media (max-width: 1300px)
 {
@@ -369,6 +534,17 @@ section
     {
         flex: 100%;
     }
+
+    .services .services_content .card
+    {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills_content .coloumn
+    {
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
  
 @media (max-width: 690px)
@@ -389,5 +565,25 @@ section
     {
         font-size: 20px;
     }
+    .services .services_content .card
+    {
+        width: 100%
+    }
 }
-/*-----------48.54---------*/
+
+@media (max-width: 500px)
+{
+    .home .home_content .text_2
+    {
+        font-size: 50px;
+    }
+    .home .home_content .text_3
+    {
+        font-size: 35px;
+    }
+    .home .home_content a
+    {
+        font-size: 20px;
+    }
+}
+/*-----------1.11.08---------*/
