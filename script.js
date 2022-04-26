@@ -5,11 +5,26 @@ $(document).ready(function()
         if(this.scrollY >20)
         {
             $('.navbar').addClass("sticky");
-        }
+        } 
         else
         {
             $('.navbar').removeClass("sticky");
         }
+
+        if(this.scroll > 500)
+        {
+            $('.scroll_up_btn').addClass("show");
+        }
+        else
+        {
+            $('.scroll_up_btn').removeClass("show");
+        }
+    });
+
+    //Slide up Script
+    $('.scroll_up_btn').click(function()
+    {
+        $('.html').animate({scrollTop: 0});
     });
 
     //toggle menu script
@@ -18,6 +33,23 @@ $(document).ready(function()
         $('.navbar .menu').toggleClass("active");
         $('.menu_btn i').toggleClass("active");
     })
+
+    //typing animation script
+var typed = new Typed(".typing",
+{
+    strings: ["Developer", "Youtuber", "Web Developer", "UI Designer", "SEO expert"],
+    typespeed: 100,
+    backspeed: 60,
+    loop: true
+});
+
+var typed = new Typed(".typing_2",
+{
+    strings: ["Developer", "Youtuber", "Web Developer", "UI Designer", "SEO expert"],
+    typespeed: 100,
+    backspeed: 60,
+    loop: true
+});
 
     //owl carousel script
     $('.carousel').owlCarousel({

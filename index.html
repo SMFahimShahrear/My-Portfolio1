@@ -7,22 +7,27 @@
     <title>Personal Portfolio</title>
     <script src="https://kit.fontawesome.com/6bcd753c4d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="scroll_up_btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
     <nav class="navbar">
         <div class="max_width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="menu_btn">Home</a></li>
+                <li><a href="#about" class="menu_btn">About</a></li>
+                <li><a href="#services" class="menu_btn">Services</a></li>
+                <li><a href="#skills" class="menu_btn">Skills</a></li>
+                <li><a href="#teams" class="menu_btn">Teams</a></li>
+                <li><a href="#contact" class="menu_btn">Contact</a></li>
             </ul>
             <div class="menu_btn">
                 <i class="fas fa-bars"></i>
@@ -36,7 +41,7 @@
             <div class="home_content">
                 <div class="text_1">Hello, I am</div>
                 <div class="text_2">Fahim Shahrear</div>
-                <div class="text_3">And I'm a <span>Developer</span></div>
+                <div class="text_3">And I'm a <span class="typing"></span></div>
                 <a href="#">Hire Me!</a>
             </div>
         </div>
@@ -51,7 +56,7 @@
                     <img src="./images/p.p1.jpg" alt="">
                 </div>
                 <div class="coloumn right">
-                    <div class="text">I am Fahim and I'm a <span>Software Engineer</span></div>
+                    <div class="text">I am Fahim and I'm a <span class="typing_2"></span></div>
                     <p>(Sample) My name is Fahim. I am 13 years old and read in class 8th standard. I am the second child of my parents and I have an elder brother. We have a joint family where my grandparents, uncle-aunt, cousins live in the same house. We love each other very much and are closely related to grandparents. All family members are open-minded and friendly. I have a group of 5 friends however Shihab is my best friend. He is true, honest and looks so nice. We both are in the same class and school. Normally, I like to hear and tell jokes and stories to my friends. I help my younger cousins in doing their home works daily. I love my parents very much. They also love me and promote me to do well in every field. They motivate and inspire me to study. My family is a cultural family. When we celebrate each festival together, we enjoyed it and have a great time. Really, I am fortunate to have this family.</p>
                     <a href="#">Download My CV</a>
                 </div>
@@ -240,9 +245,12 @@
                      </div>
              </div>
         </div>
-
     </section>
 
+     <!------------------FOOTER SECTION---------------------------->
+    <footer>
+        <span>Created by <a href="#">Fahim Shahrear</a> | <span class="far fa-copyright">2022 copyright reserved.</span></span>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
