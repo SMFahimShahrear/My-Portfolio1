@@ -275,12 +275,12 @@ section .title::after
     color: crimson;
 }
 
-.about .about_content .right p
+.about .about_content .right
 {
     text-align: justify;
 }
 
-.about .about_content .right a
+.about .about_content .right p a
 {
     display: inline-block;
     background: crimson;
