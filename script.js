@@ -38,7 +38,7 @@ $(document).ready(function()
 var typed = new Typed(".typing",
 {
     strings: ["Developer", "Youtuber", "Web Developer", "UI Designer", "SEO expert"],
-    typespeed: 100,
+    typespeed: 60,
     backspeed: 60,
     loop: true
 });
@@ -74,3 +74,4 @@ var typed = new Typed(".typing_2",
         }
     });
 });
+

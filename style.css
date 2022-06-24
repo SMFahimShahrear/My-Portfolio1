@@ -124,21 +124,59 @@ html
 }
 
 /*=================HOME SECTION STYLING=======================*/
-.home
+/* .home
 {
     display: flex;
-    background: wheat;
+    background: url(./images/myimage1.jpg) center no-repeat;
     height: 100vh;
     color: blue;
     min-height: 31rem;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', Arial, 'Times New Roman', Times, serif;
+    filter: blur();
+} */
+
+.home{
+    color: blue;
+    font-family: 'Ubuntu', Arial, 'Times New Roman', Times, serif;
+    background: #d0982f;
 }
 
-.home .max_width
+.home::after{
+    content: "";
+    height: 72vh;
+    width: 100%;
+    background-image: url(./images/myimage1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+    filter: blur(20px);
+  -webkit-filter: blur(20px);
+  transition: all 700ms;
+}
+
+.home:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+
+  .home:hover .home_content .text_1,
+  .home:hover .home_content .text_2,
+  .home:hover .home_content .text_3 {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    opacity: 0.5;
+  }
+
+.home .max_width .home_content
 {
     margin: auto 0 auto 2.5rem;
+    position: absolute;
+    z-index: 2;
+    margin-top: 12rem;
 }
 
 .home .home_content .text_1
@@ -151,6 +189,7 @@ html
     font-weight: 600;
     margin-left: -3px;
 }
+
 .home .home_content .text_3
 {
     font-size: 40px;
