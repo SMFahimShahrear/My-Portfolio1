@@ -163,7 +163,7 @@ html
     -webkit-filter: blur(0px);
   }
 
-  .home:hover .home_content .text_1,
+.home:hover .home_content .text_1,
   .home:hover .home_content .text_2,
   .home:hover .home_content .text_3 {
     filter: blur(5px);
@@ -509,7 +509,7 @@ section .title::after
 /*=================TEAMS SECTION STYLING=======================*/
 .teams .title::after
 {
-    content: "who with me";
+    content: "people with me";
 }
 
 .teams .carousel .card
