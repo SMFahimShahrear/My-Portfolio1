@@ -75,3 +75,8 @@ var typed = new Typed(".typing_2",
     });
 });
 
+document.querySelector('.home_content').addEventListener('mouseover', () =>{
+	console.log("hello");
+	//document.querySelector('.home').classList.remove('home');
+})
+
