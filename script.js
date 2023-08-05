@@ -37,15 +37,15 @@ $(document).ready(function()
     //typing animation script
 var typed = new Typed(".typing",
 {
-    strings: ["Developer", "Youtuber", "Web Developer", "UI Designer", "SEO expert"],
-    typespeed: 60,
-    backspeed: 60,
+    strings: ["Developer", "Web Developer", "Content Writer", "SEO expert"],
+    typespeed: 30,
+    backspeed: 30,
     loop: true
 });
 
 var typed = new Typed(".typing_2",
 {
-    strings: ["Developer", "Youtuber", "Web Developer", "UI Designer", "SEO expert"],
+    strings: ["Developer", "Web Developer", "Content Writer", "SEO expert"],
     typespeed: 100,
     backspeed: 60,
     loop: true
