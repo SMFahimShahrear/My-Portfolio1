@@ -1,14 +1,14 @@
 const burgerMenuButton = document.querySelector(".burger-menu-button"); 
 const burgerMenuOverlay = document.querySelector(".burger-menu-overlay"); 
-const dropdownNavigation = document.querySelector(".drop-down-navigation");
+// const dropdownNavigation = document.querySelector(".drop-down-navigation");
 
-burgerMenuOverlay.classList.add("hidden");
+// burgerMenuOverlay.classList.add("hidden");
 
-burgerMenuButton.addEventListener("click", ()=>{
-    burgerMenuOverlay.classList.toggle("hidden");
-    burgerMenuButton.children[0].classList.toggle("hidden");
-    burgerMenuButton.children[1].classList.toggle("hidden");
-})
+// burgerMenuButton.addEventListener("click", ()=>{
+//     burgerMenuOverlay.classList.toggle("hidden");
+//     burgerMenuButton.children[0].classList.toggle("hidden");
+//     burgerMenuButton.children[1].classList.toggle("hidden");
+// })
 
   $('.stars-in-sunday-slider').slick({
       infinite: true,
@@ -32,11 +32,11 @@ burgerMenuButton.addEventListener("click", ()=>{
     }
   })
 
-  dropdownNavigation.addEventListener("click", () => {
-    document.querySelector(".footer-navList").classList.toggle("visible");
-    document.querySelector(".uparrow-icon").classList.toggle("hidden");
-    document.querySelector(".dropdown-icon").classList.toggle("hidden");
-  })
+  // dropdownNavigation.addEventListener("click", () => {
+  //   document.querySelector(".footer-navList").classList.toggle("visible");
+  //   document.querySelector(".uparrow-icon").classList.toggle("hidden");
+  //   document.querySelector(".dropdown-icon").classList.toggle("hidden");
+  // })
   function ShowHide(e){
   }
 
@@ -47,8 +47,8 @@ burgerMenuButton.addEventListener("click", ()=>{
   const frameCollections = [
     {
       frameId: "frame_01",
-      frameName: "SOELAE IN BLACK",
-      framePrice: 270.00,
+      frameName: "Web Development Fundamentals Course Completion",
+      framePrice: "SoloLearn",
       frameImage: "https://www.sololearn.com/Certificate/CT-M7UARPTJ/jpg",
       frameImageAlt: "",
       frameType: "",
@@ -57,8 +57,8 @@ burgerMenuButton.addEventListener("click", ()=>{
     }, 
     {
       frameId: "frame_02",
-      frameName: "ODIN DUA IN ALE",
-      framePrice: 250.00,
+      frameName: "HTML Course Completion",
+      framePrice: "SoloLearn",
       frameImage: "https://www.sololearn.com/Certificate/1014-25709311/jpg",
       frameType: "",
       frameUsers: "",
@@ -66,8 +66,8 @@ burgerMenuButton.addEventListener("click", ()=>{
     }, 
     {
       frameId: "frame_03",
-      frameName: "CIRCE IN AMBER",
-      framePrice: 225.00,
+      frameName: "CSS Course Completion",
+      framePrice: "SoloLearn",
       frameImage: "https://www.sololearn.com/Certificate/1023-25709311/jpg",
       frameType: "",
       frameUsers: "",
@@ -75,76 +75,13 @@ burgerMenuButton.addEventListener("click", ()=>{
     }, 
     {
       frameId: "frame_04",
-      frameName: "CALYPSO IN BLACK",
-      framePrice: 225.00,
+      frameName: "Javascript Course Completion",
+      framePrice: "SoloLearn",
       frameImage: "https://www.sololearn.com/certificates/course/en/25709311/1024/landscape/png",
       frameType: "",
       frameUsers: "",
       frameColors: "",
-    }, 
-    {
-      frameId: "frame_05",
-      frameName: "CIRCE IN BLACK",
-      framePrice: 225.00,
-      frameImage: "product-showcase-item-5.png",
-      frameType: "",
-      frameUsers: "",
-      frameColors: "",
-    }, 
-    {
-      frameId: "frame_06",
-      frameName: "CALYPSO IN CHAMPAGNE",
-      framePrice: 225.00,
-      frameImage: "product-showcase-item-6.png",
-      frameType: "",
-      frameUsers: "",
-      frameColors: "",
-    },
-    {
-      frameId: "frame_07",
-      frameName: "CALYPSO IN WHITE",
-      framePrice: 225.00,
-      frameImage: "product-showcase-item-7.png",
-      frameType: "",
-      frameUsers: "",
-      frameColors: "",
-    }, 
-    {
-      frameId: "frame_08",
-      frameName: "MAIA IN WHITE",
-      framePrice: 225.00,
-      frameImage: "product-showcase-item-8.png",
-      frameType: "",
-      frameUsers: "",
-      frameColors: "",
-    }, 
-    {
-      frameId: "frame_09",
-      frameName: "ELECTRA IN TOKYO TORT",
-      framePrice: 225.00,
-      frameImage: "product-showcase-item-9.png",
-      frameType: "",
-      frameUsers: "",
-      frameColors: "",
-    }, 
-    {
-      frameId: "frame_10",
-      frameName: "CAM IN BLACK",
-      framePrice: 260.00,
-      frameImage: "product-showcase-item-10.png",
-      frameType: "",
-      frameUsers: "",
-      frameColors: "",
-    }, 
-    {
-      frameId: "frame_11",
-      frameName: "CALYPSO IN TOKYO TORT",
-      framePrice: 225.00,
-      frameImage: "product-showcase-item-11.png",
-      frameType: "",
-      frameUsers: "",
-      frameColors: "",
-    }, 
+    }
   ]
 
 function mainCodes() {
@@ -160,32 +97,32 @@ function mainCodes() {
       productPurchaseWrapper.querySelector(".product-purchase-image").innerHTML=
       `<img src="${frameCollections[frameNumber].frameImage}" alt="">`;
       productPurchaseWrapper.querySelector(".product-purchase-name p").textContent = `${frameCollections[frameNumber].frameName}`;
-      productPurchaseWrapper.querySelector(".product-purchase-price p").textContent = `$${frameCollections[frameNumber].framePrice}`;
+      productPurchaseWrapper.querySelector(".product-purchase-price p").textContent = `${frameCollections[frameNumber].framePrice}`;
 
     }
     else if (pageNavigation == 2) {
       console.log('2');
 
-      document.querySelector(".website-navigation-sort").addEventListener("click", ()=>{
-        document.querySelector(".website-navigation-sort-options").classList.toggle("hidden");
-      })
+      // document.querySelector(".website-navigation-sort").addEventListener("click", ()=>{
+      //   document.querySelector(".website-navigation-sort-options").classList.toggle("hidden");
+      // })
       
-      document.querySelector(".website-navigation-filter").addEventListener("click", ()=>{
-        document.querySelector(".website-navigation-filter-options").classList.toggle("hidden");
-      })
+      // document.querySelector(".website-navigation-filter").addEventListener("click", ()=>{
+      //   document.querySelector(".website-navigation-filter-options").classList.toggle("hidden");
+      // })
         let productShowcase = document.querySelector("section.product-showcase .showcase-wrapper");
      
   for(let i = 0; i<= frameCollections.length-1; i++){
       productShowcase.insertAdjacentHTML("beforeend",
   `
   <div class="product ${frameCollections[i].frameId}">
-  <a href="./product-page.html" onclick="productPageInstruction(this)">
+  <a>
       <div class="product-image">
           <img src="${frameCollections[i].frameImage}" alt="">
       </div>
       <div class="product-description">
           <p class="product-name">${frameCollections[i].frameName}</p>
-          <p class="product-price">$${frameCollections[i].framePrice}</p>
+          <p class="product-price">${frameCollections[i].framePrice}</p>
       </div>
   </a>
 </div>
@@ -256,7 +193,7 @@ function sortingFunction(e){
     </div>
     <div class="product-description">
         <p class="product-name">${frameCollections[i].frameName}</p>
-        <p class="product-price">$${frameCollections[i].framePrice}</p>
+        <p class="product-price">${frameCollections[i].framePrice}</p>
     </div>
 </a>
 </div>

@@ -28,12 +28,18 @@ html
     /*background: crimson;*/
     font-family: 'Ubuntu', Arial, 'Times New Roman', Times, serif;
     transition: all 0.3s ease;
+    background-color: #d0982f;
+}
+
+.navbar.nav-homepage
+{
+    background-color: transparent;
 }
 
 .navbar.sticky
 {
     padding: 1rem 0;
-    background: crimson;
+    background-color: crimson;
 }
 
 .navbar .max_width
