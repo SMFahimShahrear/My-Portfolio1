@@ -93,6 +93,34 @@ html
     color: white;
 }
 
+
+/*================= SubMenu STYLING=======================*/
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ffaaaa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.submenu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.submenu a:hover {
+    color: #555;
+}
+
+/* Show the submenu when the button is hovered */
+.more_btn_container:hover .submenu {
+    display: block;
+}
+
+
 /*=================MENU BUTTON STYLING=======================*/
 .menu_btn
 {

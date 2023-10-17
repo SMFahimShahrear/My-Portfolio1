@@ -34,20 +34,22 @@ $(document).ready(function()
         $('.menu_btn i').toggleClass("active");
     })
 
-    //typing animation script
+    //typing animation script (typed.js)
 var typed = new Typed(".typing",
 {
-    strings: ["Developer", "Web Developer", "Content Writer", "SEO expert"],
-    typespeed: 30,
-    backspeed: 30,
+    strings: ["Web Developer", "Shopify Theme Developer", "Web AB test Developer", "Content Writer", "SEO expert"],
+    typeSpeed: 50,
+    backSpeed: 15,
+    backDelay: 2000,
     loop: true
 });
 
 var typed = new Typed(".typing_2",
 {
-    strings: ["Developer", "Web Developer", "Content Writer", "SEO expert"],
-    typespeed: 100,
-    backspeed: 60,
+    strings: ["Web Developer", "Shopify Theme Developer", "Web AB test Developer", "Content Writer", "SEO expert"],
+    typeSpeed: 50,
+    backSpeed: 15,
+    backDelay: 2000,
     loop: true
 });
 
