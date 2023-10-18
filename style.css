@@ -891,12 +891,13 @@ p {
     border: 3px solid red;
     padding: 10px;
     border-radius: 10px;
-    gap: 10px;
+    gap: 1.5vw;
     flex: 9;
 }
 .expPage_detailsWrapper{
     flex: 6;
-    border-right: 1px solid pink;
+    border-right: 1px solid rgb(255, 89, 117);
+    padding-right: 1.5vw;
 }
 
 .expPage_imageWrapper{
@@ -915,6 +916,10 @@ p {
 }
 .expPage_itemTitleWrapper img{
     max-width: 120px;
+}
+
+.expPage_itemDescription{
+    text-align: justify;
 }
 
 
