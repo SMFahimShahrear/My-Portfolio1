@@ -773,6 +773,151 @@ footer span a:hover
     text-decoration: underline;
 }
 
+
+/*================= Experience Page =======================*/
+
+/* HTML CSSResult Skip Results Iframe
+EDIT ON */
+/* apply a natural box layout model to all elements */
+/* html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html, body {
+  margin:0;
+  padding:0
+}
+body {
+  background:#000;
+  color:#fff;
+} */
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after { clear: both; }
+.cf { *zoom: 1;
+}
+p {
+  margin:0 0 1em;
+  padding:10px;
+}
+.line {
+  position:relative;
+  width:95%;
+  margin:auto;
+  overflow:hidden;
+}
+.line:after {
+  content:" ";
+  width:1px;
+  background: crimson;
+  position:absolute;
+  z-index:1;
+  top:0;
+  bottom:0;
+  right:0%;
+}
+.fl { float:left; }
+.fr { float:right; }
+
+.block {
+  width:90%;
+  position:relative;
+  padding:0 50px 0 0;
+  clear:both
+}
+
+.fr { padding:0 0 0 50px; }
+
+.expPage_mainWrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 0 1em;
+    padding: 10px 0 10px 10px;
+}
+
+.expPage_circleWrapper{
+    /* float: right; */
+    /* margin-right: -85px; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.circle {
+    display: inline-block;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background: crimson;
+  /* float:right; */
+  margin-right:-5px;
+  /* margin-top:1em; */
+  position:relative;
+  z-index:2;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fr .circle {
+  float:left;
+  margin-left:-85px
+}
+.circle.first:before,.circle.last:before{
+  content:" ";
+  position:absolute;
+  width:4px;
+  left:50%;
+  margin:0 0 0 -2px;
+  background:#000;
+  bottom:100%;
+  height:99em;
+  z-index:3;
+  background:#000;
+}
+.circle.last:before{
+  bottom:auto;
+  top:100%; 
+}
+
+.expPage_itemWrapper{
+    display: flex;
+    align-items: center;
+    border: 3px solid red;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    flex: 9;
+}
+.expPage_detailsWrapper{
+    flex: 6;
+    border-right: 1px solid pink;
+}
+
+.expPage_imageWrapper{
+    flex: 4;
+}
+
+.expPage_imageWrapper > img{
+    width: 100%;
+}
+
+.expPage_itemTitleWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.expPage_itemTitleWrapper img{
+    max-width: 120px;
+}
+
+
 /*=================RESPONSIVE MEDIA QUERY=======================*/
 @media (max-width: 1300px)
 {
