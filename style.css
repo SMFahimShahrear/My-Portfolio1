@@ -161,7 +161,7 @@ html
 /* .home
 {
     display: flex;
-    background: url(./images/myimage1.jpg) center no-repeat;
+    background: url(./assets/images/myimage1.jpg) center no-repeat;
     height: 100vh;
     color: blue;
     min-height: 31rem;
@@ -181,7 +181,7 @@ html
     content: "";
     height: 72vh;
     width: 100%;
-    background-image: url(./images/myimage1.jpg);
+    background-image: url(./assets/images/myimage1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

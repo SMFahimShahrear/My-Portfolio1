@@ -21,6 +21,24 @@ $(document).ready(function()
         }
     });
 
+    function includeHTML(place, file, placementType) {
+        fetch(file)
+          .then(res => res.text())
+          .then(data => {
+            console.log('entered the then');
+            document.querySelector(place).insertAdjacentHTML(placementType, data);
+          })
+          .catch(err => console.error(`Error loading ${file}:`, err));
+      }
+
+      //navbar include
+      includeHTML("header", "./components/header.html", 'afterbegin');
+      includeHTML("footer", "./components/footer.html", 'afterbegin');
+      includeHTML("footer", "./components/contact.html", 'beforebegin');
+
+
+    //   includeHTML("footer", "footer.html");
+
     //Slide up Script
     $('.scroll_up_btn').click(function()
     {
@@ -33,6 +51,7 @@ $(document).ready(function()
         $('.navbar .menu').toggleClass("active");
         $('.menu_btn i').toggleClass("active");
     })
+
 
     //typing animation script (typed.js)
 var typed = new Typed(".typing",
